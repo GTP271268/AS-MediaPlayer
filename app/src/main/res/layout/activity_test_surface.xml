@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/test_sur_rl_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black">
+
+        <com.gtp.androidplayer.custom.MysurfaceView
+            android:id="@+id/test_sur_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/test_sur_top_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/test_sur_rl_sv"
+        android:background="#45000000"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/test_sur_iv_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:id="@+id/test_sur_tv_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="1/5"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/test_sur_iv_download"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:src="@mipmap/download"
+            android:text="00:00" />
+
+        <ImageView
+            android:id="@+id/test_sur_iv_share"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="14dp"
+            android:src="@mipmap/share" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/test_sur_bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#45000000"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/test_sur_iv_play"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:padding="15dp"
+            android:src="@mipmap/video_start" />
+
+        <TextView
+            android:id="@+id/test_sur_tv_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="00:00"
+            android:textColor="@android:color/white" />
+
+        <SeekBar
+            android:id="@+id/test_sur_seekbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/test_sur_tv_total_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="00:00"
+            android:textColor="@android:color/white" />
+        <TextView
+            android:id="@+id/test_sur_tv_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="/1.0X"
+            android:textColor="@android:color/white" />
+
+        <ImageView
+            android:id="@+id/test_sur_iv_full"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="14dp"
+            android:src="@mipmap/video_shrink" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/test_show_center_ll"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/test_sur_top_ll"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/test_sur_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/video_start" />
+
+        <TextView
+            android:id="@+id/test_sur_icontext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="00:00"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
